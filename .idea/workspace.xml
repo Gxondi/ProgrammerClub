@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="65fc7b02-f544-48a8-ba7d-e0bdf93992e8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/club-subject/club-application/application-controller/src/main/java/com/hyh/club/subject/application/controller/SubjectCategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-subject/club-application/application-controller/src/main/java/com/hyh/club/subject/application/controller/SubjectController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-subject/club-application/application-controller/src/main/java/com/hyh/club/subject/application/convert/SubjectCategoryDTOConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-subject/club-application/application-controller/src/main/java/com/hyh/club/subject/application/dto/SubjectCategoryDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-subject/club-common/src/main/java/com/hyh/club/subject/common/enums/ResultCodeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-subject/club-common/src/main/java/com/hyh/club/subject/common/result/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-subject/club-domain/src/main/java/com/hyh/club/subject/domain/convert/SubjectCategoryConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-subject/club-domain/src/main/java/com/hyh/club/subject/domain/entity/SubjectCategoryBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-subject/club-domain/src/main/java/com/hyh/club/subject/domain/service/SubjectCategoryDomainService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-subject/club-domain/src/main/java/com/hyh/club/subject/domain/service/impl/SubjectCategoryDomainServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-subject/club-infra/src/main/java/com/hyh/club/subject/infra/basic/entity/SubjectCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-subject/club-infra/src/main/java/com/hyh/club/subject/infra/basic/mapper/SubjectCategoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-subject/club-infra/src/main/java/com/hyh/club/subject/infra/basic/service/SubjectCategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-subject/club-infra/src/main/java/com/hyh/club/subject/infra/basic/service/impl/SubjectCategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-subject/club-infra/src/main/java/com/hyh/club/subject/infra/basic/utils/DruidCryptUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-subject/club-infra/src/main/resources/mapper/SubjectCategoryDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-subject/club-starter/src/main/java/com/hyh/club/subject/SubjectApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-subject/club-starter/src/main/resources/ log4j2-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-subject/club-starter/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="subject" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="F:\Projects\ProgrammerClub\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="1.8" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2rbudAbYXp9yfO7cmtO4wYDIXVU" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/Projects/ProgrammerClub/ProgrammerClub/club-subject/club-application/application-controller/src/main/java/com/hyh/club/subject/application&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15625&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.sjhy.plugin.ui.MainSettingForm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;d157a20f2a91a9734308aa76b802762d&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Projects\ProgrammerClub\ProgrammerClub\club-subject\club-application\application-controller\src\main\java\com\hyh\club\subject\application" />
+      <recent name="F:\Projects\ProgrammerClub\ProgrammerClub\club-subject\club-application\application-mq\src\main\java" />
+      <recent name="F:\Projects\ProgrammerClub\ProgrammerClub\club-subject\club-application\application-job\src\main\java" />
+      <recent name="F:\Projects\ProgrammerClub\ProgrammerClub\club-subject\club-application\application-controller\src\main\java" />
+      <recent name="F:\Projects\ProgrammerClub\ProgrammerClub\club-subject\club-common\src\main\java\com\hyh\club\subject\common" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hyh.club.subject.application.dto" />
+      <recent name="com.hyh.club.subject.application.controller" />
+      <recent name="com.hyh.club.subject.domain.entity" />
+      <recent name="com.hyh.club.subject.infra.basic.mapper" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SubjectApplication">
+    <configuration name="DruidCryptUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hyh.club.subject.infra.basic.utils.DruidCryptUtil" />
+      <module name="club-infra" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hyh.club.subject.infra.basic.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SubjectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="club-starter" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hyh.club.subject.SubjectApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hyh.club.subject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.SubjectApplication" />
+        <item itemvalue="Application.DruidCryptUtil" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="65fc7b02-f544-48a8-ba7d-e0bdf93992e8" name="Changes" comment="" />
+      <created>1736840180967</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736840180967</updated>
+      <workItem from="1736840192550" duration="4235000" />
+      <workItem from="1736844518351" duration="348000" />
+      <workItem from="1736917660596" duration="118000" />
+      <workItem from="1737091612885" duration="8949000" />
+      <workItem from="1737337041653" duration="4832000" />
+      <workItem from="1737355571881" duration="3161000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
