@@ -2,38 +2,32 @@ package com.hyh.club.subject.domain.entity;
 
 import lombok.Data;
 
-import java.io.Serializable;
 import java.util.Date;
 
 /**
- * 题目分类(SubjectCategory)实体类BO
+ * 题目标签表(SubjectLabel)实体类
  *
  * @author Condix
- * @since 2025-01-17 14:40:27
+ * @since 2025-01-20 17:42:21
  */
 @Data
-public class SubjectCategoryBO implements Serializable {
-    private static final long serialVersionUID = -57474269395030120L;
+public class SubjectLabelBO {
     /**
      * 主键
      */
     private Long id;
     /**
-     * 分类名称
+     * 标签分类
      */
-    private String categoryName;
+    private String labelName;
     /**
-     * 分类类型
+     * 排序
      */
-    private Integer categoryType;
-    /**
-     * 图标连接
-     */
-    private String imageUrl;
-    /**
-     * 父级id
-     */
-    private Long parentId;
+    private Integer sortNum;
+    
+    private String categoryId;
+    
+    private Integer isDeleted;
 
     /**
      * 创建人

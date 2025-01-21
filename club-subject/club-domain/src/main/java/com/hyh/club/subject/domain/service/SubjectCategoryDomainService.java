@@ -8,4 +8,8 @@ public interface SubjectCategoryDomainService {
     void add(SubjectCategoryBO subjectCategoryBO);
 
     List<SubjectCategoryBO> queryCategory(SubjectCategoryBO subjectCategoryBO);
+
+    boolean update(SubjectCategoryBO subjectCategoryBO);
+
+    boolean delete(SubjectCategoryBO subjectCategoryBO);
 }

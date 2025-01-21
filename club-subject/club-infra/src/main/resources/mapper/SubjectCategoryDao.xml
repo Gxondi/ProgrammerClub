@@ -21,6 +21,7 @@
         from subject_category
         where id = #{id}
     </select>
+
     <select id="queryCategory" resultMap="SubjectCategoryMap">
         select
             *

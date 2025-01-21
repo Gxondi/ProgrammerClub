@@ -8,7 +8,7 @@ import com.hyh.club.subject.common.result.Result;
 import com.hyh.club.subject.domain.entity.SubjectCategoryBO;
 import com.hyh.club.subject.domain.service.SubjectCategoryDomainService;
 import lombok.extern.log4j.Log4j2;
-import org.springframework.util.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -32,7 +32,7 @@ public class SubjectCategoryController {
                 log.info("com.hyh.club.subject.application.dto:{}", JSON.toJSONString(subjectCategoryDTO));
             }
             Preconditions.checkNotNull(subjectCategoryDTO.getCategoryType(), "分类类型不可为空");
-            Preconditions.checkArgument(!StringUtils.isEmpty(subjectCategoryDTO.getCategoryName()), "分类名称不可为空");
+            Preconditions.checkArgument(!StringUtils.isBlank(subjectCategoryDTO.getCategoryName()), "分类名称不可为空");
             Preconditions.checkNotNull(subjectCategoryDTO.getParentId(), "分类父类不可为空");
             SubjectCategoryBO subjectCategoryBO = SubjectCategoryDTOConvert.INSTANCE.convertDTOToCategoryBO(subjectCategoryDTO);
             subjectCategoryDomainService.add(subjectCategoryBO);
@@ -43,9 +43,8 @@ public class SubjectCategoryController {
         }
     }
     @PostMapping("/queryPrimaryCategory")
-    public Result<List<SubjectCategoryDTO>> queryPrimaryCategory(){
+    public Result<List<SubjectCategoryDTO>> queryPrimaryCategory(@RequestBody SubjectCategoryDTO subjectCategoryDTO){
         try {
-            SubjectCategoryDTO subjectCategoryDTO = new SubjectCategoryDTO();
             SubjectCategoryBO subjectCategoryBO = SubjectCategoryDTOConvert.INSTANCE.convertDTOToCategoryBO(subjectCategoryDTO);
             List<SubjectCategoryBO> subjectCategoryBOList = subjectCategoryDomainService.queryCategory(subjectCategoryBO);
             List<SubjectCategoryDTO> subjectCategoryDTOList = SubjectCategoryDTOConvert.INSTANCE.convertBOToCategoryDTO(subjectCategoryBOList);
@@ -66,6 +65,31 @@ public class SubjectCategoryController {
             return Result.OK(subjectCategoryDTOList);
         } catch (Exception e) {
             log.info("com.hyh.club.subject.application.dto.queryPrimaryCategory.error:{}", e.getMessage(), e);
+            return Result.FAIL(e.getMessage());
+        }
+    }
+
+    @PostMapping("/update")
+    public Result<Boolean> update(@RequestBody SubjectCategoryDTO subjectCategoryDTO){
+        try {
+            SubjectCategoryBO subjectCategoryBO = SubjectCategoryDTOConvert.INSTANCE.convertDTOToCategoryBO(subjectCategoryDTO);
+            Preconditions.checkNotNull(subjectCategoryDTO.getId(), "ID不可为空");
+            boolean result = subjectCategoryDomainService.update(subjectCategoryBO);
+            return Result.OK(result);
+        } catch (Exception e) {
+            log.info("com.hyh.club.subject.application.dto.update.error:{}", e.getMessage(), e);
+            return Result.FAIL(e.getMessage());
+        }
+    }
+
+    @PostMapping("/delete")
+    public  Result<Boolean> delete(@RequestBody SubjectCategoryDTO subjectCategoryDTO){
+        try {
+            SubjectCategoryBO subjectCategoryBO = SubjectCategoryDTOConvert.INSTANCE.convertDTOToCategoryBO(subjectCategoryDTO);
+            boolean result = subjectCategoryDomainService.delete(subjectCategoryBO);
+            return Result.OK(result);
+        } catch (Exception e) {
+            log.info("com.hyh.club.subject.application.dto.delete.error:{}", e.getMessage(), e);
             return Result.FAIL(e.getMessage());
         }
     }
