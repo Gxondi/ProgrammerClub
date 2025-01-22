@@ -14,7 +14,11 @@
         <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
         <result property="isDeleted" column="is_deleted" jdbcType="INTEGER"/>
     </resultMap>
-
+    <select id="queryBySubjectId" resultMap="SubjectRadioMap">
+        select id, subject_id, option_type, option_content, is_correct
+        from subject_radio
+        where subject_id =#{subjectId}
+    </select>
     <!--查询单个-->
     <select id="queryById" resultMap="SubjectRadioMap">
         select

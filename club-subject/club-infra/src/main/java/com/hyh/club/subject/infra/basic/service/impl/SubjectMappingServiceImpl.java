@@ -74,4 +74,11 @@ public class SubjectMappingServiceImpl implements SubjectMappingService {
     public void batchInsert(List<SubjectMapping> subjectMappingList) {
         this.subjectMappingDao.insertBatch(subjectMappingList);
     }
+
+    @Override
+    public List<SubjectMapping> queryListBySubjectId(SubjectMapping subjectMapping) {
+        return this.subjectMappingDao.queryListById(subjectMapping);
+    }
+
+
 }

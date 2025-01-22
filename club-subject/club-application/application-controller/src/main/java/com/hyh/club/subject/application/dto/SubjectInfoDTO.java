@@ -1,5 +1,6 @@
 package com.hyh.club.subject.application.dto;
 
+import com.hyh.club.subject.common.result.PageInfo;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -13,7 +14,7 @@ import java.util.List;
  * @since 2025-01-21 12:16:19
  */
 @Data
-public class SubjectInfoDTO implements Serializable {
+public class SubjectInfoDTO extends PageInfo implements Serializable {
     private static final long serialVersionUID = 665026874580833612L;
     /**
      * 主键
@@ -47,10 +48,14 @@ public class SubjectInfoDTO implements Serializable {
      * 题目答案
      */
     private String subjectAnswer;
+
     private List<Integer> categoryIds;
+
     private List<Integer> labelIds;
 
-    private List<SubjectAnswerDTO> optionList;
+    private Integer subjectLabelId;
+
+    private Integer subjectCategoryId;
 
     private Integer isDeleted;
 
@@ -70,5 +75,9 @@ public class SubjectInfoDTO implements Serializable {
      * 更新时间
      */
     private Date updateTime;
+
+    private List<SubjectAnswerDTO> optionList;
+
+    private List<String> labelNameList;
 }
 

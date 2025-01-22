@@ -47,4 +47,6 @@ public interface SubjectMappingService {
     List<SubjectMapping> queryLabelId(SubjectMapping subjectMapping);
 
     void batchInsert(List<SubjectMapping> subjectMappingList);
+
+    List<SubjectMapping> queryListBySubjectId(SubjectMapping subjectMapping);
 }

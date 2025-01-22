@@ -3,7 +3,6 @@ package com.hyh.club.subject.infra.basic.mapper;
 import com.hyh.club.subject.infra.basic.entity.SubjectMapping;
 import org.apache.ibatis.annotations.Param;
 
-import java.awt.print.Pageable;
 import java.util.List;
 
 /**
@@ -73,5 +72,7 @@ public interface SubjectMappingDao {
     int deleteById(Long id);
 
     List<SubjectMapping> queryLabelId(SubjectMapping subjectMapping);
+
+    List<SubjectMapping> queryListById(SubjectMapping subjectMapping);
 }
 

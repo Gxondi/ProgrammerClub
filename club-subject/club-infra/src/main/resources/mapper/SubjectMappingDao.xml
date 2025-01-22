@@ -21,7 +21,12 @@
         from subject_mapping
         where id = #{id}
     </select>
-
+    <select id="queryListById" resultMap="SubjectMappingMap">
+        select distinct
+            id, subject_id, category_id, label_id, created_by, created_time, update_by, update_time, is_deleted
+        from subject_mapping
+        where subject_id = #{subjectId}
+    </select>
     <select id="queryLabelId" resultMap="SubjectMappingMap">
         select
           DISTINCT label_id

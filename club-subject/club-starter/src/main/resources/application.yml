@@ -29,4 +29,6 @@ spring:
         config:
           enabled: true
 publicKey: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAJtODvCUJzuC8tS6amXPltNnj4eLZER9w9kATLvcYfRyxzkR+E8+P9IrUQPGd1ZDL56ngP+FxgBtaue2ZGAacMkCAwEAAQ==
-
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

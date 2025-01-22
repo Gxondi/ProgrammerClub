@@ -16,6 +16,61 @@
         <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
         <result property="isDeleted" column="is_deleted" jdbcType="INTEGER"/>
     </resultMap>
+    <select id="subjectInfoByCondition" resultMap="SubjectInfoMap">
+        select *
+        from subject_info info,
+             subject_mapping mapping,
+             subject_label label,
+             subject_category category
+        where info.id = #{subjectInfo.id}
+        and
+
+    </select>
+    <select id="queryByCondition" resultType="java.lang.Integer">
+        select count(1)
+        from subject_info info,
+        subject_mapping mapping
+        where info.id = mapping.subject_id
+        and mapping.category_Id = #{categoryId}
+        and mapping.label_Id = #{labelId}
+        and info.is_deleted = 0
+        and mapping.is_deleted = 0
+        <if test="subjectInfo.subjectDifficult != null">
+            and info.subject_difficult = #{subjectInfo.subjectDifficult}
+        </if>
+        <if test="subjectInfo.subjectType != null">
+            and info.subject_type = #{subjectInfo.subjectType}
+        </if>
+    </select>
+
+    <select id="queryPage" resultMap="SubjectInfoMap">
+        select info.id,
+        info.subject_name,
+        info.subject_difficult,
+        info.settle_name,
+        info.subject_type,
+        info.subject_score,
+        info.subject_parse,
+        info.created_by,
+        info.created_time,
+        info.update_by,
+        info.update_time,
+        info.is_deleted
+        from subject_info info,
+        subject_mapping mapping
+        where info.id = mapping.subject_id
+        and mapping.category_Id = #{categoryId}
+        and mapping.label_Id = #{labelId}
+        and info.is_deleted = 0
+        and mapping.is_deleted = 0
+        <if test="subjectInfo.subjectDifficult != null">
+            and info.subject_difficult = #{subjectInfo.subjectDifficult}
+        </if>
+        <if test="subjectInfo.subjectType != null">
+            and info.subject_type = #{subjectInfo.subjectType}
+        </if>
+        limit #{start},#{pageSize}
+    </select>
 
     <!--查询单个-->
     <select id="queryById" resultMap="SubjectInfoMap">

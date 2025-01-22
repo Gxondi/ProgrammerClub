@@ -24,6 +24,4 @@ public class PageInfo implements Serializable {
         }
         return pageSize;
     }
-
-
 }

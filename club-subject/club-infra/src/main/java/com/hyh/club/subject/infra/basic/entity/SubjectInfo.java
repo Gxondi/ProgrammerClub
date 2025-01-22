@@ -45,6 +45,8 @@ public class SubjectInfo implements Serializable {
     private String subjectAnswer;
     private List<Integer> categoryIds;
     private List<Integer> labelIds;
+    private Integer subjectLabelId;
+    private Integer subjectCategoryId;
     /**
      * 创建人
      */
@@ -67,7 +69,5 @@ public class SubjectInfo implements Serializable {
     private String subjectParse;
     private Integer isDeleted;
     private List<SubjectAnswer> optionList;
-
-
 }
 

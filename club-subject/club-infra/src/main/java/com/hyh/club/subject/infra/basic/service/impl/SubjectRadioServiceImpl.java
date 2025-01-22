@@ -1,6 +1,5 @@
 package com.hyh.club.subject.infra.basic.service.impl;
 
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.hyh.club.subject.infra.basic.entity.SubjectRadio;
 import com.hyh.club.subject.infra.basic.mapper.SubjectRadioDao;
 import com.hyh.club.subject.infra.basic.service.SubjectRadioService;
@@ -70,5 +69,11 @@ public class SubjectRadioServiceImpl implements SubjectRadioService {
     @Override
     public void batchInsert(List<SubjectRadio> subjectRadioList) {
         this.subjectRadioDao.insertBatch(subjectRadioList);
+    }
+
+    @Override
+    public List<SubjectRadio> queryBySubjectId(SubjectRadio subjectRadio) {
+
+        return this.subjectRadioDao.queryBySubjectId(subjectRadio);
     }
 }

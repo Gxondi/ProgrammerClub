@@ -1,5 +1,6 @@
 package com.hyh.club.subject.domain.entity;
 
+import com.hyh.club.subject.common.result.PageInfo;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -13,7 +14,7 @@ import java.util.List;
  * @since 2025-01-21 12:16:19
  */
 @Data
-public class SubjectInfoBO implements Serializable {
+public class SubjectInfoBO extends PageInfo implements Serializable {
     private static final long serialVersionUID = 665026874580833612L;
     /**
      * 主键
@@ -40,20 +41,23 @@ public class SubjectInfoBO implements Serializable {
      */
     private Integer subjectScore;
     /**
-     * 题目答案
-     */
-    private String subjectAnswer;
-    private List<Integer> categoryIds;
-    private List<Integer> labelIds;
-    /**
      * 题目解析
      */
     private String subjectParse;
+    /**
+     * 题目答案
+     */
+    private String subjectAnswer;
 
-    private List<SubjectAnswerBO> optionList;
+    private List<Integer> categoryIds;
+
+    private List<Integer> labelIds;
+
+    private Integer subjectLabelId;
+
+    private Integer subjectCategoryId;
 
     private Integer isDeleted;
-
     /**
      * 创建人
      */
@@ -70,5 +74,9 @@ public class SubjectInfoBO implements Serializable {
      * 更新时间
      */
     private Date updateTime;
+
+    private List<SubjectAnswerBO> optionLists;
+    private List<String> labelNameList;
+
 }
 

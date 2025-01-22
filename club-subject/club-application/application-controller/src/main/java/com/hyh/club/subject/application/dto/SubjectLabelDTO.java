@@ -25,11 +25,10 @@ public class SubjectLabelDTO {
      * 排序
      */
     private Integer sortNum;
-    
-    private String categoryId;
-    
-    private Integer isDeleted;
 
+    private String categoryId;
+
+    private Integer isDeleted;
     /**
      * 创建人
      */
@@ -46,6 +45,5 @@ public class SubjectLabelDTO {
      * 更新时间
      */
     private Date updateTime;
-
 }
 

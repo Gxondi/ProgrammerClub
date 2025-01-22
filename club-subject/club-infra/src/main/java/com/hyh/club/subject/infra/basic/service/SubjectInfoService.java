@@ -3,6 +3,8 @@ package com.hyh.club.subject.infra.basic.service;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.hyh.club.subject.infra.basic.entity.SubjectInfo;
 
+import java.util.List;
+
 
 /**
  * 题目信息表(SubjectInfo)表服务接口
@@ -44,4 +46,9 @@ public interface SubjectInfoService {
      */
     boolean deleteById(Long id);
 
+    int querySubjectList(SubjectInfo subjectInfo, Integer categoryId, Integer labelId);
+
+    List<SubjectInfo> queryPage(Integer start, SubjectInfo subjectInfo, Integer subjectDifficult, Integer categoryId, Integer labelId, Integer pageSize);
+
+    SubjectInfo subjectInfoByCondition(SubjectInfo subjectInfo);
 }
