@@ -1,4 +1,5 @@
 autoDetectedPackages:
+- com.hyh.club.oss
 - com.hyh.club.subject
 enableAutoDetect: true
 funcDisplayConfig:
