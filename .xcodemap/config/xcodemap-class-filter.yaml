@@ -1,4 +1,6 @@
 autoDetectedPackages:
+- com.hyh.club.auth
+- com.hyh.club.gateway
 - com.hyh.club.oss
 - com.hyh.club.subject
 enableAutoDetect: true

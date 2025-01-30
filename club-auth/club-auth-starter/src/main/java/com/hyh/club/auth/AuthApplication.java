@@ -1,4 +1,4 @@
-package com.hyh.club.subject;
+package com.hyh.club.auth;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
