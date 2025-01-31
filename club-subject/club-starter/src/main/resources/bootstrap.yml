@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: jc-club-subject
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      config:
+        server-addr: 121.199.26.134:8848
+        prefix: ${spring.application.name}
+        group: DEFAULT_GROUP
+        namespace:
+        file-extension: yaml
+        refresh-enabled: true
+        auto-refresh: true
+        enable-remote-sync-config: true
+      discovery:
+        enabled: true
+        server-addr: ${spring.cloud.nacos.config.server-addr}
+        namespace: ${spring.cloud.nacos.config.namespace}
