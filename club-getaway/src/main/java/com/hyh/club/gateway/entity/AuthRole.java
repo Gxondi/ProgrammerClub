@@ -1,4 +1,4 @@
-package com.hyh.club.auth.application.dto;
+package com.hyh.club.gateway.entity;
 
 import lombok.Data;
 
@@ -12,7 +12,7 @@ import java.util.Date;
  * @since 2025-01-30 11:53:36
  */
 @Data
-public class AuthRoleDTO implements Serializable {
+public class AuthRole implements Serializable {
     private static final long serialVersionUID = 531149645508536669L;
     
     private Long id;
@@ -44,6 +44,7 @@ public class AuthRoleDTO implements Serializable {
      * 是否被删除 0未删除 1已删除
      */
     private Integer isDeleted;
+
 
 }
 

@@ -5,52 +5,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65fc7b02-f544-48a8-ba7d-e0bdf93992e8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-application/club-auth-application-controller/src/main/java/com/hyh/club/auth/application/config/GlobalConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-application/club-auth-application-controller/src/main/java/com/hyh/club/auth/application/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-application/club-auth-application-controller/src/main/java/com/hyh/club/auth/application/controller/UsersController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-application/club-auth-application-controller/src/main/java/com/hyh/club/auth/application/convert/AuthUserDTOConvert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-application/club-auth-application-controller/src/main/java/com/hyh/club/auth/application/dto/AuthUserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-common/src/main/java/com/hyh/club/auth/common/enums/AuthUserStatusEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-common/src/main/java/com/hyh/club/auth/common/enums/IsDeletedFlagEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-common/src/main/java/com/hyh/club/auth/common/enums/ResultCodeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-common/src/main/java/com/hyh/club/auth/common/result/PageInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-common/src/main/java/com/hyh/club/auth/common/result/PageResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-common/src/main/java/com/hyh/club/auth/common/result/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-domain/src/main/java/com/hyh/club/auth/domain/convert/AuthUserBOConvert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-domain/src/main/java/com/hyh/club/auth/domain/entity/AuthUserBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-domain/src/main/java/com/hyh/club/auth/domain/service/AuthUserDomainService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-domain/src/main/java/com/hyh/club/auth/domain/service/Impl/AuthUserDomainServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/java/com/hyh/club/auth/basic/config/MybatisConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/java/com/hyh/club/auth/basic/config/MybatisPlusAllSqlLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/java/com/hyh/club/auth/basic/config/SqlStatementInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/java/com/hyh/club/auth/basic/entity/AuthUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/java/com/hyh/club/auth/basic/mapper/AuthUserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/java/com/hyh/club/auth/basic/service/AuthUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/java/com/hyh/club/auth/basic/service/impl/AuthUserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/resources/mapper/AuthUserDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-starter/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-getaway/src/main/java/com/hyh/club/gateway/GatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-getaway/src/main/java/com/hyh/club/gateway/auth/SaTokenConfigure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-getaway/src/main/java/com/hyh/club/gateway/auth/StpInterfaceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-getaway/src/main/java/com/hyh/club/gateway/entity/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-getaway/src/main/java/com/hyh/club/gateway/enums/ResultCodeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-getaway/src/main/java/com/hyh/club/gateway/exception/GatewayExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-getaway/src/main/java/com/hyh/club/gateway/redis/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-getaway/src/main/java/com/hyh/club/gateway/redis/RedisUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-getaway/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-getaway/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/club-subject/club-starter/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.xcodemap/config/xcodemap-class-filter.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.xcodemap/config/xcodemap-class-filter.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/club-auth/club-auth-application/club-auth-application-controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/club-auth/club-auth-application/club-auth-application-controller/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/club-auth/club-auth-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/club-auth/club-auth-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/club-auth/club-auth-starter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/club-auth/club-auth-starter/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/club-auth/club-auth-starter/src/main/java/com/hyh/club/subject/AuthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/club-auth/club-auth-starter/src/main/java/com/hyh/club/auth/AuthApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/club-auth/club-auth-starter/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/club-auth/club-auth-starter/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/club-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/club-auth/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/club-getaway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/club-getaway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/club-oss/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/club-oss/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/club-subject/club-application/application-controller/src/main/java/com/hyh/club/subject/application/config/GlobalConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/club-subject/club-application/application-controller/src/main/java/com/hyh/club/subject/application/config/GlobalConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/club-subject/club-starter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/club-subject/club-starter/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-application/club-auth-application-controller/src/main/java/com/hyh/club/auth/application/controller/PermissionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-application/club-auth-application-controller/src/main/java/com/hyh/club/auth/application/controller/RolePermissionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-application/club-auth-application-controller/src/main/java/com/hyh/club/auth/application/convert/AuthPermissionDTOConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-application/club-auth-application-controller/src/main/java/com/hyh/club/auth/application/convert/AuthRolePermissionDTOConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-application/club-auth-application-controller/src/main/java/com/hyh/club/auth/application/dto/AuthPermissionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-application/club-auth-application-controller/src/main/java/com/hyh/club/auth/application/dto/AuthRolePermissionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-domain/src/main/java/com/hyh/club/auth/domain/constant/AuthUserRoleConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-domain/src/main/java/com/hyh/club/auth/domain/convert/AuthPermissionBOConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-domain/src/main/java/com/hyh/club/auth/domain/convert/AuthRolePermissionBOConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-domain/src/main/java/com/hyh/club/auth/domain/convert/AuthUserRoleBOConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-domain/src/main/java/com/hyh/club/auth/domain/entity/AuthPermissionBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-domain/src/main/java/com/hyh/club/auth/domain/entity/AuthRolePermissionBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-domain/src/main/java/com/hyh/club/auth/domain/redis/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-domain/src/main/java/com/hyh/club/auth/domain/redis/RedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-domain/src/main/java/com/hyh/club/auth/domain/service/AuthPermissionDomainService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-domain/src/main/java/com/hyh/club/auth/domain/service/AuthRolePermissionDomainService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-domain/src/main/java/com/hyh/club/auth/domain/service/Impl/AuthPermissionDomainServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-domain/src/main/java/com/hyh/club/auth/domain/service/Impl/AuthRolePermissionDomainServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/java/com/hyh/club/auth/basic/entity/AuthPermission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/java/com/hyh/club/auth/basic/entity/AuthRolePermission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/java/com/hyh/club/auth/basic/entity/AuthUserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/java/com/hyh/club/auth/basic/mapper/AuthPermissionDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/java/com/hyh/club/auth/basic/mapper/AuthRolePermissionDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/java/com/hyh/club/auth/basic/mapper/AuthUserRoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/java/com/hyh/club/auth/basic/service/AuthPermissionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/java/com/hyh/club/auth/basic/service/AuthRolePermissionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/java/com/hyh/club/auth/basic/service/AuthUserRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/java/com/hyh/club/auth/basic/service/impl/AuthPermissionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/java/com/hyh/club/auth/basic/service/impl/AuthRolePermissionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/java/com/hyh/club/auth/basic/service/impl/AuthUserRoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/resources/mapper/AuthPermissionDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/resources/mapper/AuthRolePermissionDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/resources/mapper/AuthUserRoleDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-getaway/src/main/java/com/hyh/club/gateway/entity/AuthPermission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club-getaway/src/main/java/com/hyh/club/gateway/entity/AuthRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/club-auth/club-auth-application/club-auth-application-controller/src/main/java/com/hyh/club/auth/application/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/club-auth/club-auth-application/club-auth-application-controller/src/main/java/com/hyh/club/auth/application/controller/RoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/club-auth/club-auth-application/club-auth-application-controller/src/main/java/com/hyh/club/auth/application/convert/AuthUserRoleDTOConvert.java" beforeDir="false" afterPath="$PROJECT_DIR$/club-auth/club-auth-application/club-auth-application-controller/src/main/java/com/hyh/club/auth/application/convert/AuthRoleDTOConvert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/club-auth/club-auth-application/club-auth-application-controller/src/main/java/com/hyh/club/auth/application/dto/AuthRoleDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/club-auth/club-auth-application/club-auth-application-controller/src/main/java/com/hyh/club/auth/application/dto/AuthRoleDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/club-auth/club-auth-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/club-auth/club-auth-domain/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/club-auth/club-auth-domain/src/main/java/com/hyh/club/auth/domain/entity/AuthRoleBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/club-auth/club-auth-domain/src/main/java/com/hyh/club/auth/domain/entity/AuthRoleBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/club-auth/club-auth-domain/src/main/java/com/hyh/club/auth/domain/service/AuthRoleDomainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/club-auth/club-auth-domain/src/main/java/com/hyh/club/auth/domain/service/AuthRoleDomainService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/club-auth/club-auth-domain/src/main/java/com/hyh/club/auth/domain/service/Impl/AuthRoleDomainServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/club-auth/club-auth-domain/src/main/java/com/hyh/club/auth/domain/service/Impl/AuthRoleDomainServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/club-auth/club-auth-domain/src/main/java/com/hyh/club/auth/domain/service/Impl/AuthUserDomainServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/club-auth/club-auth-domain/src/main/java/com/hyh/club/auth/domain/service/Impl/AuthUserDomainServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/java/com/hyh/club/auth/basic/entity/AuthRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/java/com/hyh/club/auth/basic/entity/AuthRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/java/com/hyh/club/auth/basic/entity/AuthUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/java/com/hyh/club/auth/basic/entity/AuthUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/java/com/hyh/club/auth/basic/mapper/AuthRoleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/java/com/hyh/club/auth/basic/mapper/AuthRoleDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/java/com/hyh/club/auth/basic/service/AuthRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/java/com/hyh/club/auth/basic/service/AuthRoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/java/com/hyh/club/auth/basic/service/impl/AuthRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/java/com/hyh/club/auth/basic/service/impl/AuthRoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/resources/mapper/AuthRoleDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/resources/mapper/AuthRoleDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/resources/mapper/AuthUserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/club-auth/club-auth-infra/src/main/resources/mapper/AuthUserDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/club-auth/club-auth-starter/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/club-auth/club-auth-starter/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/club-getaway/src/main/java/com/hyh/club/gateway/auth/StpInterfaceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/club-getaway/src/main/java/com/hyh/club/gateway/auth/StpInterfaceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/club-subject/club-infra/src/main/java/com/hyh/club/subject/infra/basic/entity/SubjectCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/club-subject/club-infra/src/main/java/com/hyh/club/subject/infra/basic/entity/SubjectCategory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +114,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "F:/Projects/ProgrammerClub/ProgrammerClub/club-auth/club-auth-application/club-auth-application-controller/src/main/java/com/hyh/club/auth",
+    "last_opened_file_path": "F:/Projects/ProgrammerClub/ProgrammerClub/club-auth/club-auth-domain/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -117,7 +124,7 @@
     "project.structure.proportion": "0.15625",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "13a8c99872a5572afe5051256b73cae5",
+    "spring.configuration.checksum": "9a5dd76f1265f5ade5a4a9b370193b1b",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -131,18 +138,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Projects\ProgrammerClub\ProgrammerClub\club-auth\club-auth-domain\src\main\resources" />
+      <recent name="F:\Projects\ProgrammerClub\ProgrammerClub\club-getaway\src\main\java\com\hyh\club\gateway\entity" />
+      <recent name="F:\Projects\ProgrammerClub\ProgrammerClub\club-auth\club-auth-domain\src\main\java\com\hyh\club\auth\domain" />
       <recent name="F:\Projects\ProgrammerClub\ProgrammerClub\club-auth\club-auth-application\club-auth-application-controller\src\main\java\com\hyh\club\auth" />
       <recent name="F:\Projects\ProgrammerClub\ProgrammerClub\club-auth\club-auth-common\src\main\java\com\hyh\club\auth" />
-      <recent name="F:\Projects\ProgrammerClub\ProgrammerClub\club-auth\club-auth-domain\src\main\java\com\hyh\club\auth\domain" />
-      <recent name="F:\Projects\ProgrammerClub\ProgrammerClub\club-auth\club-auth-infra\src\main\java\com\hyh\club\auth\basic" />
-      <recent name="F:\Projects\ProgrammerClub\ProgrammerClub\club-subject\club-starter\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.hyh.club.auth.application.config" />
-      <recent name="com.hyh.club.auth.domain.service" />
+      <recent name="com.hyh.club.auth.domain.convert" />
       <recent name="com.hyh.club.auth.domain.entity" />
+      <recent name="com.hyh.club.auth.application.convert" />
+      <recent name="com.hyh.club.auth.application.controller" />
       <recent name="com.hyh.club.auth.application.dto" />
-      <recent name="com.hyh.club.gateway.entity" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.AuthApplication">
@@ -223,8 +230,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.AuthApplication" />
-        <item itemvalue="Spring Boot.SubjectApplication" />
         <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Spring Boot.SubjectApplication" />
         <item itemvalue="Spring Boot.GatewayApplication (1)" />
         <item itemvalue="Spring Boot.MinioApplication" />
       </list>
@@ -254,7 +261,9 @@
       <workItem from="1738152797827" duration="14524000" />
       <workItem from="1738168845983" duration="609000" />
       <workItem from="1738199795373" duration="2470000" />
-      <workItem from="1738202504702" duration="1127000" />
+      <workItem from="1738202504702" duration="2974000" />
+      <workItem from="1738228550832" duration="5517000" />
+      <workItem from="1738319372082" duration="7022000" />
     </task>
     <servers />
   </component>
@@ -279,6 +288,11 @@
           <url>file://$PROJECT_DIR$/club-subject/club-application/application-controller/src/main/java/com/hyh/club/subject/application/controller/SubjectLabelController.java</url>
           <line>74</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/club-auth/club-auth-domain/src/main/java/com/hyh/club/auth/domain/service/Impl/AuthUserDomainServiceImpl.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

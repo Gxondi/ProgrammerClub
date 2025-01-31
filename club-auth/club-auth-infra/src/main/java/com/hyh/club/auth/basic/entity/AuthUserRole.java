@@ -1,29 +1,31 @@
-package com.hyh.club.auth.application.dto;
+package com.hyh.club.auth.basic.entity;
 
 import lombok.Data;
 
-import java.io.Serializable;
 import java.util.Date;
+import java.io.Serializable;
 
 /**
- * (AuthRole)实体类
+ * 用户角色表(AuthUserRole)实体类
  *
  * @author Condix
- * @since 2025-01-30 11:53:36
+ * @since 2025-01-30 18:26:57
  */
 @Data
-public class AuthRoleDTO implements Serializable {
-    private static final long serialVersionUID = 531149645508536669L;
-    
+public class AuthUserRole implements Serializable {
+    private static final long serialVersionUID = 401345929126549411L;
+    /**
+     * 主键
+     */
     private Long id;
     /**
-     * 角色名称
+     * 用户id
      */
-    private String roleName;
+    private Long userId;
     /**
-     * 角色唯一标识
+     * 角色id
      */
-    private String roleKey;
+    private Long roleId;
     /**
      * 创建人
      */
@@ -40,9 +42,7 @@ public class AuthRoleDTO implements Serializable {
      * 更新时间
      */
     private Date updateTime;
-    /**
-     * 是否被删除 0未删除 1已删除
-     */
+    
     private Integer isDeleted;
 
 }

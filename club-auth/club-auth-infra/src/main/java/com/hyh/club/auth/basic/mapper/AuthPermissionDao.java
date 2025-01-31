@@ -1,17 +1,17 @@
 package com.hyh.club.auth.basic.mapper;
 
-import com.hyh.club.auth.basic.entity.AuthRole;
+import com.hyh.club.auth.basic.entity.AuthPermission;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.data.domain.Pageable;
 import java.util.List;
 
 /**
- * (AuthRole)表数据库访问层
+ * (AuthPermission)表数据库访问层
  *
  * @author Condix
- * @since 2025-01-30 11:53:36
+ * @since 2025-01-30 18:42:18
  */
-public interface AuthRoleDao {
+public interface AuthPermissionDao {
 
     /**
      * 通过ID查询单条数据
@@ -19,57 +19,57 @@ public interface AuthRoleDao {
      * @param id 主键
      * @return 实例对象
      */
-    AuthRole queryById(Long id);
+    AuthPermission queryById(Long id);
 
     /**
      * 查询指定行数据
      *
-     * @param authRole 查询条件
+     * @param authPermission 查询条件
      * @param pageable         分页对象
      * @return 对象列表
      */
-    List<AuthRole> queryAllByLimit(AuthRole authRole, @Param("pageable") Pageable pageable);
+    List<AuthPermission> queryAllByLimit(AuthPermission authPermission, @Param("pageable") Pageable pageable);
 
     /**
      * 统计总行数
      *
-     * @param authRole 查询条件
+     * @param authPermission 查询条件
      * @return 总行数
      */
-    long count(AuthRole authRole);
+    long count(AuthPermission authPermission);
 
     /**
      * 新增数据
      *
-     * @param authRole 实例对象
+     * @param authPermission 实例对象
      * @return 影响行数
      */
-    int insert(AuthRole authRole);
+    int insert(AuthPermission authPermission);
 
     /**
      * 批量新增数据（MyBatis原生foreach方法）
      *
-     * @param entities List<AuthRole> 实例对象列表
+     * @param entities List<AuthPermission> 实例对象列表
      * @return 影响行数
      */
-    int insertBatch(@Param("entities") List<AuthRole> entities);
+    int insertBatch(@Param("entities") List<AuthPermission> entities);
 
     /**
      * 批量新增或按主键更新数据（MyBatis原生foreach方法）
      *
-     * @param entities List<AuthRole> 实例对象列表
+     * @param entities List<AuthPermission> 实例对象列表
      * @return 影响行数
      * @throws org.springframework.jdbc.BadSqlGrammarException 入参是空List的时候会抛SQL语句错误的异常，请自行校验入参
      */
-    int insertOrUpdateBatch(@Param("entities") List<AuthRole> entities);
+    int insertOrUpdateBatch(@Param("entities") List<AuthPermission> entities);
 
     /**
      * 修改数据
      *
-     * @param authRole 实例对象
+     * @param authPermission 实例对象
      * @return 影响行数
      */
-    int update(AuthRole authRole);
+    int update(AuthPermission authPermission);
 
     /**
      * 通过主键删除数据
@@ -79,6 +79,6 @@ public interface AuthRoleDao {
      */
     int deleteById(Long id);
 
-    AuthRole queryByCondition(String normalUser);
+    List<AuthPermission> queryByIds(@Param("ids") List<Long> permissionIds);
 }
 

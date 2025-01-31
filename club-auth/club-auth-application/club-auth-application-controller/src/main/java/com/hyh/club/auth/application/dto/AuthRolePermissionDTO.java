@@ -4,26 +4,28 @@ import lombok.Data;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 /**
- * (AuthRole)实体类
+ * 角色权限关联表(AuthRolePermission)实体类
  *
  * @author Condix
- * @since 2025-01-30 11:53:36
+ * @since 2025-01-30 18:43:13
  */
 @Data
-public class AuthRoleDTO implements Serializable {
-    private static final long serialVersionUID = 531149645508536669L;
+public class AuthRolePermissionDTO implements Serializable {
+    private static final long serialVersionUID = 213904141205191749L;
     
     private Long id;
     /**
-     * 角色名称
+     * 角色id
      */
-    private String roleName;
+    private Long roleId;
     /**
-     * 角色唯一标识
+     * 权限id
      */
-    private String roleKey;
+    private Long permissionId;
+    private List<Long> permissionIdList;
     /**
      * 创建人
      */
@@ -40,9 +42,7 @@ public class AuthRoleDTO implements Serializable {
      * 更新时间
      */
     private Date updateTime;
-    /**
-     * 是否被删除 0未删除 1已删除
-     */
+    
     private Integer isDeleted;
 
 }

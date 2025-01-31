@@ -39,5 +39,23 @@ public class SubjectCategory implements Serializable {
      * 是否删除 0: 未删除 1: 已删除
      */
     private Integer isDeleted;
+    /**
+     * 创建时间
+     */
+    private Date createdTime;
+    /**
+     * 更新时间
+     */
+    private Date updateTime;
+
+    /**
+     * 创建人
+     */
+    private Long createdBy;
+    /**
+     * 更新人
+     */
+    private Long updateBy;
+
 }
 

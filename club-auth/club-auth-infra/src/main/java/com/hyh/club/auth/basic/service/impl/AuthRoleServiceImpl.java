@@ -52,9 +52,8 @@ public class AuthRoleServiceImpl implements AuthRoleService {
      * @return 实例对象
      */
     @Override
-    public AuthRole insert(AuthRole authRole) {
-        this.authRoleDao.insert(authRole);
-        return authRole;
+    public int insert(AuthRole authRole) {
+        return this.authRoleDao.insert(authRole);
     }
 
     /**
@@ -64,9 +63,8 @@ public class AuthRoleServiceImpl implements AuthRoleService {
      * @return 实例对象
      */
     @Override
-    public AuthRole update(AuthRole authRole) {
-        this.authRoleDao.update(authRole);
-        return this.queryById(authRole.getId());
+    public int update(AuthRole authRole) {
+        return this.authRoleDao.update(authRole);
     }
 
     /**
@@ -78,5 +76,10 @@ public class AuthRoleServiceImpl implements AuthRoleService {
     @Override
     public boolean deleteById(Long id) {
         return this.authRoleDao.deleteById(id) > 0;
+    }
+
+    @Override
+    public AuthRole queryByCondition(String normalUser) {
+        return this.authRoleDao.queryByCondition(normalUser);
     }
 }
